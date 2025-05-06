@@ -43,3 +43,6 @@ jobs:
       
       - name: Build Docker Image
         run: docker build -t python-app:${{ github.sha }} .
+
+      - name: list docker images
+        run: docker images
