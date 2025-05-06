@@ -30,4 +30,4 @@ jobs:
 
       - name: Run Tests
         if: ${{ inputs.action == 'test' }}
-        run: pytest
+        run: PYTHONPATH=src pytest
